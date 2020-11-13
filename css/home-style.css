@@ -1,0 +1,354 @@
+/* Start Main Rules */
+body{ 
+	background-color: white;
+}
+
+.container{	
+	width:1170px; 
+	margin:auto;
+}
+
+.clearfix{ 
+clear: both;   /*between any two floats*/
+}
+/* End Main Rules */
+
+
+/* Start Header */
+header nav{
+	background-color: rgb(27, 25, 25);
+	overflow: hidden;
+	/* position: fixed;
+    width: 100%;
+    top: 0; */
+    padding-top: 12px;
+    /* margin-bottom: 10px; */
+    /* z-index: 5; */
+}
+header nav h2{
+	color: #FFF;
+	display: inline-block;
+	font-family: 'Piedra', cursive;
+}
+header nav h2 span{
+	color:rgb(172, 172, 172);
+}
+header nav ul{
+	list-style: none;
+	padding-left: 0;
+	overflow: hidden;
+	float:right;
+}
+header nav ul li{
+	float:left;
+	padding: 10px;
+}
+header nav ul li a{
+	color: #FFF;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color:rgb(172, 172, 172);
+	font-weight: bold;
+}
+/* End Header */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+html{
+scroll-behavior: smooth;
+}
+.sizer{
+width: 350px;
+height: 250px;
+}
+.border-bottom{
+    border-bottom: 3px solid lightgray !important;
+}
+.blockquote{
+    border-left: 4px solid #795548 !important;
+    padding-left: 8px;
+}
+.nodecoration a{
+    color: #795548 !important;
+    text-decoration: none !important;
+}
+.transparent{
+    background-color: transparent !important;
+}
+.jumbotron{
+    margin-bottom: 0rem!important;
+}
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid #795548;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid #795548;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes typefinal {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes blinker {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+.overflow{
+overflow: hidden;
+}
+
+.shadowing{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.css-typing p {
+    border-right: .15em solid black;
+    font-family: monospace;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: .15em;
+}
+
+.css-typing p:nth-of-type(1) {
+    width: 100%;
+    animation: type 1s steps(40, end);
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(2) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(3) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(4) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(5) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(6) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(7) {
+    width: 100%;
+    word-break: break-all;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(9) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 1s steps(40, end);
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-of-type(10){
+    width: 100%;
+    opacity: 0;
+    animation: typefinal 1s steps(40, end);
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+.swing {
+    animation: swing ease-in-out 1.5s infinite alternate;
+    transform-origin: center -20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -11px; left: 44%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -17px;left: 46.5%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+@keyframes smallswing{
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+.ml-xs-mob{
+    margin-left: 2rem!important;
+    margin-right: 2rem!important;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.moving{
+    animation: moving ease-in-out 1s infinite alternate;
+}
+
+@keyframes moving {
+    to { 
+    transform: translateX(-8px);
+
+    }
+}
+.circle:hover{
+    border-radius: 50%;
+}
+.toright{
+    float: right;
+}
+.toleft{
+    float: left;
+}
+.cleardiv{
+    clear: both;
+}
+
+.nav-link:hover{
+    color: #F8F9FA!important;
+    border-radius: 20px;	
+}
+.pls-3{
+    float: left;
+    padding-left: 10px;
+}
+#plsf-3{
+    float: left;
+    padding-left: 40px;
+}
+
+@keyframes blinker {
+from {
+    opacity: 1.0;
+}
+to {
+    
+    opacity: 0.2;
+    color: #17A2B8;
+    }
+}
+#blink{
+    animation-name: blinker;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Start Footer */
+.footer{
+	background-color: #000;
+	color: #fff;;
+	padding: 20px 0;
+	text-align: center;
+}
+/* End Footer */

@@ -54,6 +54,9 @@ clear: both;   /*between any two floats*/
 	background-color: black;
 	color: #FFF;
 	overflow: hidden;
+	position: fixed;
+	width: 100% ;
+	top: 0;
 }
 .header .navbar .logo{
 	padding: 10px 0;
@@ -394,7 +397,7 @@ clear: both;   /*between any two floats*/
 	padding: 20px 0;
 	text-align: center;
 }
-	overflow: hidden;
+
 .footer ul{ 
 	list-style: none;
 	padding-left: 0;
