@@ -31,7 +31,7 @@ header nav h2{
 	font-family: 'Piedra', cursive;
 }
 header nav h2 span{
-	color: rgb(255, 204, 213);
+	color:rgb(172, 172, 172);
 }
 header nav ul{
 	list-style: none;
@@ -48,7 +48,7 @@ header nav ul li a{
 	text-decoration: none;
 }
 header nav ul li a:hover{
-	color: rgb(255, 204, 213);
+	color:rgb(172, 172, 172);
 	font-weight: bold;
 }
 header #slider{
@@ -87,8 +87,9 @@ header #slider .introduction button{
 	cursor: pointer;
 }
 header #slider .introduction button:hover{
-	/*box-shadow: Horizontal Shadow | Vertical Shadow | Blur | Spread | Color | Inset,Outset*/
-	box-shadow: 3px 3px 8px rgb(255 204 213), -3px -3px 8px rgb(255 204 213);
+	background-color: rgb(172, 172, 172);
+	border: none;
+	color: #000;
 }
 /* End Header */
 
@@ -97,8 +98,18 @@ header #slider .introduction button:hover{
 	background-color: rgb(245 245 245 / 45%);
 	overflow: hidden;
 }
+#aboutMe .introduction h2{
+	margin: 35px 0 0px 0px;
+    text-align: center;
+}
+#aboutMe .introduction p{
+	margin: 25px 0 20px 0px;
+}
+#aboutMe .introduction p:last-of-type{
+	margin-bottom:35px;
+}
 #aboutMe .image{
-	width: 35%;
+	width: 30%;
 	height: 600px;
 }
 #aboutMe .image img{
@@ -106,20 +117,11 @@ header #slider .introduction button:hover{
 	height: 667px;
 }
 #aboutMe .info{
-	width: 65%;
-}
-#aboutMe .info h2{
-	margin: 25px 0 20px 40px;
-}
-#aboutMe .info > p{
-	margin: 0 0 10px 40px;
-}
-#aboutMe .info p:last-of-type{
-	margin-top:10px;
+	width: 70%;
 }
 #aboutMe .info .hobbies{
 	overflow: hidden;
-	margin: 15px 0 0px 40px;
+	margin: 15px 0 0px 30px;
 }
 #aboutMe .info .hobbies h2{
 	margin: 25px 0 20px 0px;
@@ -164,14 +166,14 @@ header #slider .introduction button:hover{
 .mySkills .SoftSkills{
 	margin-left: 20%;
 }
-.mySkills .TechnicalSkills h3{
+.mySkills .TechnicalSkills h3,.mySkills .SoftSkills h3{
 	margin-bottom: 10%;
 	border-bottom: 2px solid black;
-	width: 130px;
+}
+.mySkills .TechnicalSkills h3{
+	width: 133px;
 }
 .mySkills .SoftSkills h3{
-	margin-bottom: 10%;
-	border-bottom: 2px solid black;
 	width: 88px;
 }
 .mySkills .TechnicalSkills .technique div,
@@ -181,12 +183,12 @@ header #slider .introduction button:hover{
 }
 .mySkills .TechnicalSkills .technique div span,
 .mySkills .SoftSkills .technique div span{
-	background-color: #F08F65;
+	background-color: rgb(172, 172, 172);
 	height: 20px;
 	display: block;
 	text-align: right;
 	line-height: 20px;
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 /* End My Skills */
@@ -194,7 +196,7 @@ header #slider .introduction button:hover{
 /* Start Resume*/
 
 .resume{
-	background-color: #f9efe3;
+	background-color: rgb(245 245 245 / 45%);
 	padding: 50px 0 70px 0;
 	text-align: center;
 }

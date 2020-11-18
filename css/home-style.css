@@ -15,17 +15,19 @@ clear: both;   /*between any two floats*/
 
 
 /* Start Header */
+header{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
 header nav{
 	background-color: rgb(27, 25, 25);
 	overflow: hidden;
-	/* position: fixed;
+	position: fixed;
     width: 100%;
-    top: 0; */
-    padding-top: 12px;
-    /* margin-bottom: 10px; */
-    /* z-index: 5; */
 }
-header nav h2{
+header nav h2{    
+    padding-top: 10px;
 	color: #FFF;
 	display: inline-block;
 	font-family: 'Piedra', cursive;
@@ -37,7 +39,8 @@ header nav ul{
 	list-style: none;
 	padding-left: 0;
 	overflow: hidden;
-	float:right;
+    float:right;
+    padding-top: 10px;
 }
 header nav ul li{
 	float:left;
@@ -345,10 +348,14 @@ to {
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Start Footer */
+/* Start Footer */
 .footer{
-	background-color: #000;
-	color: #fff;;
-	padding: 20px 0;
+	background-color: #000;;
+	color: #FFF;
+	padding: 7px 0;
 	text-align: center;
 }
+/* End Footer */
+
+
 /* End Footer */
