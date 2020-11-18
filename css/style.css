@@ -150,10 +150,49 @@ header #slider .introduction button:hover{
 }
 /* End About Me */
 
+/* Start Learning */
+#learn h2{
+	margin: 35px 0 20px 0px;
+    text-align: center;
+}
+#learn #education{
+	float: left;
+	width: 40%;
+}
+#learn #courses{
+	float: right;
+	width: 40%;
+	margin-left: 20%;
+}
+#learn #education .edu,#learn #courses .course{
+	margin-bottom: 40px;
+}
+#learn #education span:last-of-type{
+	display: block;
+	color:rgba(133, 144, 153, 0.445);
+	margin-top: 10px;
+}
+/* End Learning */
+
+/* Start Experience */
+#experience h2{
+	margin: 35px 0 20px 0px;
+    text-align: center;
+}
+#experience .exp{
+	float: left;
+	width: 100%;
+}
+#experience .exp span{
+	display: block;
+	color:rgba(133, 144, 153, 0.445);
+	margin-top: 10px;
+}
+/* End Experience */
 
 /* Start My Skills*/
 .mySkills{
-	padding: 30px 0 50px 0;
+	padding: 10px 0 50px 0;
 	overflow: hidden;
 }
 .mySkills h2{
@@ -218,50 +257,6 @@ header #slider .introduction button:hover{
 	border: 2px solid #F08F65;
 }
 /* End Resume */
-
-/* Start My Education*/
-.MyEducation{
-	padding: 30px 0 50px 0;
-	overflow: hidden;
-}
-.MyEducation hr{
-	margin: 20px 0;
-	height: 1px;
-	border: 0;
-	background-color: black;
-}
-.MyEducation .main{
-	width: 50%;
-	margin-right: 5%;
-}
-.MyEducation .main h2{
-	margin: 25px 0 20px 40px;
-}
-.MyEducation .main p{
-	margin: 0 0 10px 40px;
-}
-.MyEducation .main p:last-of-type{
-	margin-top: 25px;
-}
-.MyEducation .MyExperience{
-	width: 45%;
-}
-.MyEducation .MyExperience h3{
-	margin: 80px 0 10px 0;
-}
-.MyEducation .MyExperience span{
-	display: block;
-	margin: 0 0 8px 0;
-}
-.MyEducation .MyExperience span:first-of-type{
-	color: #F08F65;
-}
-.MyEducation .MyExperience span:last-of-type{
-	background-color: #F9EFE3;
-	display: inline-block;
-	padding: 4px 10px;
-}	
-/* End My Education */
  
 /* Start testemonials */
 .testemonials{
