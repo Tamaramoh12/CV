@@ -441,18 +441,31 @@ p:last-of-type{
 footer{
 	background-color: #000;;
 	color: #FFF;
-	padding: 7px 0;
+	padding: 10px 0;
 	text-align: center;
+}
+footer span{
+	/* margin-bottom: 5px; */
 }
 footer span a{
 	color: white;
 	text-decoration: none;
 }
-footer span a:hover{
+footer span a:hover,
+footer .social-icons a:hover{
 	color: #6b6666;
 	transition: all .25s ease-in-out;
 }
-footer ul{ 
+footer .social-icons a{
+	color: white;
+	text-decoration: none;
+}
+footer .social-icons i{
+	margin: 10px 5px 0 5px;
+}
+
+
+/* footer ul{ 
 	list-style: none;
 	padding-left: 0;
 	margin: 10px 0 0 0 ;
@@ -464,6 +477,6 @@ footer ul li img{
 	width: 25px;
 	height: 25px;
 	padding-right: 2px;
-}
+} */
 /* End Footer */
 
