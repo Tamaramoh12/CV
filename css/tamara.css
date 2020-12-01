@@ -1,60 +1,4 @@
-/* Start Main Rules */
-body{ 
-	background-color: white;
-}
 
-.container{	
-	width:1170px; 
-	margin:auto;
-}
-
-.clearfix{ 
-clear: both;   /*between any two floats*/
-}
-/* End Main Rules */
-
-
-/* Start Header */
-header{
-    position: absolute;
-    top: 0;
-    z-index: 5;
-}
-header nav{
-	background-color: rgb(27, 25, 25);
-	overflow: hidden;
-	position: fixed;
-    width: 100%;
-}
-header nav h2{    
-    padding-top: 10px;
-	color: #FFF;
-	display: inline-block;
-	font-family: 'Piedra', cursive;
-}
-header nav h2 span{
-	color:rgb(172, 172, 172);
-}
-header nav ul{
-	list-style: none;
-	padding-left: 0;
-	overflow: hidden;
-    float:right;
-    padding-top: 10px;
-}
-header nav ul li{
-	float:left;
-	padding: 10px;
-}
-header nav ul li a{
-	color: #FFF;
-	text-decoration: none;
-}
-header nav ul li a:hover{
-	color:rgb(172, 172, 172);
-	font-weight: bold;
-}
-/* End Header */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 html{
 scroll-behavior: smooth;
@@ -258,9 +202,9 @@ overflow: hidden;
     margin-left: 2rem!important;
     margin-right: 2rem!important;
 }
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+/* .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
-}
+} */
 
 .flip-container, .front, .back {
     width: 320px;
@@ -300,7 +244,6 @@ overflow: hidden;
 @keyframes moving {
     to { 
     transform: translateX(-8px);
-
     }
 }
 .circle:hover{
@@ -347,15 +290,3 @@ to {
     animation-direction: alternate;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* Start Footer */
-/* Start Footer */
-.footer{
-	background-color: #000;;
-	color: #FFF;
-	padding: 7px 0;
-	text-align: center;
-}
-/* End Footer */
-
-
-/* End Footer */
