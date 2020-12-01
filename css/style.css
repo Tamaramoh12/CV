@@ -1,4 +1,7 @@
-/* Start Main Rules */
+/* Start Mutual Styles */
+*{
+    box-sizing: border-box;
+}
 body{ 
 	background-color: white;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -8,22 +11,32 @@ body{
 	margin:auto;
 }
 .clearfix{ 
-	clear: both;   /*between any two floats*/
+	clear: both;   /* between any two floats */
 }
 .float-left{
 	float:left; /* floating element left */
 }
+.float-right{
+	float: right;
+}
 p {
 	line-height: 1.7;
+	text-align: justify;
 }
-/* End Main Rules */
+h3{
+	text-align: center;
+	font-size: xx-large;
+}
+/* End Mutual Styles */
 
-/* Start Header */
+/* Start Header*/
 header nav{
-	background-color: rgb(27, 25, 25);
-	overflow: hidden;
-	position: fixed;
+    background-color: rgb(17, 15, 15);
+    position: fixed;
+    top: 0;
     width: 100%;
+	left: 0;
+	z-index: 20;
 }
 header nav h2{
 	color: #FFF;
@@ -49,25 +62,34 @@ header nav ul li a{
 }
 header nav ul li a:hover{
 	color:rgb(172, 172, 172);
-	font-weight: bold;
+    text-decoration: underline;
+    font-size: larger;
 }
 header #slider{
-	background-image: url('../images/Background.jpg');
+	background-image: url('https://www.creativeclique.co.za/wp-content/uploads/2019/01/Ridge-Design-Website-Design-Background.jpg');
+	/* background-image: url('../images/tamaraHussien.jpg'); */
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	overflow: hidden;
-	height: 587px;
+    overflow: hidden;
+    width: 100%;
+	height: 660px;
+	box-shadow: 1px -2px 11px 1px #bdb9ba;
 }
 header .bg{
 	background-color: rgba(133, 144, 153, 0.445);
-	overflow: hidden;
-	height: 587px;
+    overflow: hidden;
+    height: 660px;
 }
 header #slider .introduction{
 	text-align: center;
-	color: white; 
-	margin-top: 15%;
+    color: white; 
+	margin-top: 18%;
+	/* text-align: center;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 2%; */
 }
 header #slider .introduction h2{
 	font-size: 50px;
@@ -87,141 +109,147 @@ header #slider .introduction button{
 	cursor: pointer;
 }
 header #slider .introduction button:hover{
-	background-color: rgb(172, 172, 172);
+	transition: all .5s ease-in-out;
+	background-color: rgba(133, 144, 153, 0.445);
 	border: none;
 	color: #000;
 }
 /* End Header */
 
 /* Start About Me */
-#aboutMe{
-	background-color: rgb(245 245 245 / 45%);
+#about{
 	overflow: hidden;
+    background-color: #d2cfcfbd;
+	padding: 20px 0 40px 0;
+	box-shadow: 0px 1px 10px 0px #d6d0d1;
 }
-#aboutMe .introduction h2{
-	margin: 35px 0 0px 0px;
-    text-align: center;
+#about p{
+	width: 45%;
 }
-#aboutMe .introduction p{
-	margin: 25px 0 20px 0px;
+p:first-of-type{
+	margin-right: 5%;
 }
-#aboutMe .introduction p:last-of-type{
-	margin-bottom:35px;
-}
-#aboutMe .image{
-	width: 30%;
-	height: 600px;
-}
-#aboutMe .image img{
-	width: 100%;
-	height: 667px;
-}
-#aboutMe .info{
-	width: 70%;
-}
-#aboutMe .info .hobbies{
-	overflow: hidden;
-	margin: 15px 0 0px 30px;
-}
-#aboutMe .info .hobbies h2{
-	margin: 25px 0 20px 0px;
-}
-#aboutMe .info .hobbies .content{ 
-	width: 40%;
-	overflow: hidden;
-	margin-right: 10%;
-}
-#aboutMe .info .hobbies .content .icon{
-	width: 8%;
-	margin-right: 5%
-}
-#aboutMe .info .hobbies .content .icon img{
-	max-width: 100%;
-	margin: 20px 10px 0 0;
-}
-#aboutMe .info .hobbies .content .text{
-	width: 87%;
-}
-#aboutMe .info .hobbies .content .text p{
-	margin-top: 0;
-}
-#aboutMe .info .hobbies .content .text h3{
-	margin-bottom: 5px;
+p:last-of-type{
+	margin-left: 5%;
 }
 /* End About Me */
 
-/* Start Learning */
-#learn h2{
-	margin: 35px 0 20px 0px;
-    text-align: center;
+/* Start Services*/
+#services{
+	padding: 20px 0 40px 0;
+	overflow: hidden;
+	perspective: 600px;
 }
-#learn #education{
+#services .service{
 	float: left;
-	width: 40%;
+	display: inline;
+	width: 33.33333%;
+	margin-top: 23px;
 }
-#learn #courses{
-	float: right;
-	width: 40%;
-	margin-left: 20%;
+#services .service:hover{
+	/* transform: translateZ(50px); */
+	transform: scale(1.2);
+	transition: all .5s ease-in-out;
 }
-#learn #education .edu,#learn #courses .course{
-	margin-bottom: 40px;
+#services .service img{
+	width: 150px;
+    height: 150px;
+    display: block;
+	margin: 0 auto;
 }
-#learn #education span:last-of-type{
-	display: block;
-	color:rgba(133, 144, 153, 0.445);
-	margin-top: 10px;
+#services .service h3{
+	text-align: center;
+	font-size: large;
 }
-/* End Learning */
+/* End Services*/
 
-/* Start Experience */
-#experience h2{
-	margin: 35px 0 20px 0px;
+/* Start Education*/
+#education{
+	overflow: hidden;
+	/* background-color: #d2cfcfbd; */
+	background-image: url('https://image.freepik.com/free-photo/open-book-with-glasses-wooden-table-against-background-set-books-vintage-toning_101969-512.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/* padding: 20px 0 40px 0; */
+	box-shadow: 0px 1px 10px 0px #d6d0d1;
+}
+#education .bg{
+	background-color: rgba(206, 206, 206, 0.918);
+	overflow: hidden;
+	padding: 20px 0 40px 0;
+	height: 100%;
+}
+#education .edu{
+	display: inline;
+	width: 24%;
+	float: left;
+}
+#education .edu h5{
+	margin-bottom: 10px;
+}
+#education .edu h4{
+	margin: 10px 0;
+}
+#education .edu p{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+#education .edu p:last-of-type{
+	color: #6b6666;
+}
+#education .certificate{
+	display: inline;
+    width: 32%;
+    margin-right: 1.3%;
+    float: left;
     text-align: center;
 }
-#experience .exp{
-	float: left;
+#education .certificate h2{
+	margin-top: 20px;
+}
+#education .certificate img{
 	width: 100%;
+    height: 250px;
 }
-#experience .exp span{
-	display: block;
-	color:rgba(133, 144, 153, 0.445);
-	margin-top: 10px;
+#education .certificate img:hover{
+	transition: all .5s ease-in-out;
+	transform: rotate(-5deg) scale(1.1);
+	padding: 10px;
 }
-/* End Experience */
+#education .certificate h4{
+	margin: 10px 0;
+	color: #6b6666;
+}
+/* End Education*/
 
 /* Start My Skills*/
-.mySkills{
+#mySkills{
 	padding: 10px 0 50px 0;
 	overflow: hidden;
 }
-.mySkills h2{
-	text-align: center;
-}
-.mySkills .TechnicalSkills,
-.mySkills .SoftSkills{
+#mySkills .TechnicalSkills{
 	width: 40%;
 }
-.mySkills .SoftSkills{
+#mySkills .SoftSkills{
 	margin-left: 20%;
 }
-.mySkills .TechnicalSkills h3,.mySkills .SoftSkills h3{
+#mySkills .TechnicalSkills h3{
 	margin-bottom: 10%;
 	border-bottom: 2px solid black;
 }
-.mySkills .TechnicalSkills h3{
+#mySkills .TechnicalSkills h3{
 	width: 133px;
 }
-.mySkills .SoftSkills h3{
+#mySkills .SoftSkills h3{
 	width: 88px;
 }
-.mySkills .TechnicalSkills .technique div,
-.mySkills .SoftSkills .technique div{
+#mySkills .TechnicalSkills .technique div{
 	background-color: #F2F2F2;
 	height: 20px;
 }
-.mySkills .TechnicalSkills .technique div span,
-.mySkills .SoftSkills .technique div span{
+#mySkills .TechnicalSkills .technique div span{
 	background-color: rgb(172, 172, 172);
 	height: 20px;
 	display: block;
@@ -232,91 +260,124 @@ header #slider .introduction button:hover{
 }
 /* End My Skills */
 
-/* Start Resume*/
-
-.resume{
-	background-color: rgb(245 245 245 / 45%);
-	padding: 50px 0 70px 0;
-	text-align: center;
-}
-
-.resume p{
-	color:black;
-	padding: 0 40px;
-}
-.resume button{
-	background: none;
-	border:2px solid black;
-	padding: 10px 30px;
-	color: black;
-	font-weight: bold;
-	margin-top: 25px;
-}
-.resume button:hover{
-	color: #F08F65;
-	border: 2px solid #F08F65;
-}
-/* End Resume */
- 
-/* Start testemonials */
-.testemonials{
-	background-color:#f9efe3;
-	padding: 50px 0 50px 0;
-	text-align: center;
-}
-.testemonials q{
-	line-height: 1.8;
-	font-style: italic;
-	font-size: 17px;
-}
-.testemonials h3{
-	margin-bottom: 30px;
-}
-.testemonials ul{
-	list-style: none;
-	padding-left: 0;
-	text-align: center;
-}
-.testemonials ul li{
-	width: 15px;
-	height: 15px;
-	border: 2px solid #F08F65;
-	display: inline-block;
-	cursor: pointer;
-}
-.testemonials ul li.active,
-.testemonials ul li:hover{
-	background-color: #F08F65;
-}
-/* End testemonials */
-
-/* Start portfolio */
-.portfolio{
-	padding: 50px 0 70px 0;
-	text-align: center;
-}
-.portfolio h2{
-
-}
-.portfolio p{
-	margin-bottom: 30px;
-}
-.portfolio .myWork{
+/* Start Projects*/
+#projects{
 	overflow: hidden;
+    /* background-color: #d2cfcfbd; */
+	padding: 20px 0 50px 0;
+	box-shadow: 0px 1px 10px 0px #d6d0d1;
 }
-.portfolio .myWork > div{
+#projects .pro{
+	display: inline;
 	float: left;
-	width: 33.333333%;
-	margin-bottom: 10px;
+	width: 33.3%;
 }
-.portfolio .myWork > div img{
-	width: 92%;
-	margin: 10px;
-	padding: 3px;
-	background-color: white;
-	border: 1px solid #CCC;
+#projects .pro img{
+	width: 100%;
+    height: 250px;
+	display: block;
+    margin: 0 auto;
 }
-/* End portfolio */
+#projects .pro img:hover{
+	transition: all .5s ease-in-out;
+	transform: scale(1.1);
+}
+#projects .pro div{
+	text-align: center;
+}
+#projects .pro div h2 a{
+	color: black;
+	text-decoration: none;
+}
+#projects .pro div h2 a:hover{
+	border-bottom: 2px solid #6b6666;
+	color: #6b6666;
+	transition: all .25s ease-in-out;
+}
+/* End Projects*/
+
+/* Start Testemonials */
+.Testemonials{
+	background: #f2f2f273;
+	box-shadow: 0px 1px 10px 0px #d6d0d1;
+	height: 350px;
+	color: black;
+	position: relative;
+	overflow: hidden
+}
+
+.Testemonials blockquote{
+	width:85%;
+	margin: 0 auto;
+	font-style: italic;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 87%;
+}
+
+.Testemonials blockquote:before{
+	content:open-quote" "
+}
+
+.Testemonials blockquote:after{
+	content:" "close-quote
+}
+			   
+.Testemonials h4{
+	text-align: center;
+	margin: 35px 0 50px
+}
+  
+.Testemonials input[ type="radio"]{
+	display: none
+}
+
+.Testemonials label{
+	padding:0  9px;
+	cursor: pointer;
+	border:2px solid rgb(172, 172, 172);
+	margin:10px;
+	border-radius: 50%;
+	transition: all .5s;
+}
+
+.Testemonials aside{
+	width: 122px;
+	margin: 0 auto;
+	position:absolute;
+	bottom: 15%;
+	right: 50%;
+	transform: translatex(50%)
+}
+
+.Testemonials label:hover{
+	background-color: rgb(172, 172, 172);
+}
+
+.Testemonials input + div {
+	opacity: 1;
+	transition: all 1s ease-out;
+	width:100%;
+	position: absolute;
+	top: 350px; 
+}
+
+
+
+.Testemonials input[id="slide1"]:checked ~ aside label[for="slide1"],
+.Testemonials input[id="slide2"]:checked ~ aside label[for="slide2"],
+.Testemonials input[id="slide3"]:checked ~ aside label[for="slide3"]
+
+{background-color: rgb(172, 172, 172);border:none} 
+
+
+.Testemonials input[id="slide1"]:checked + div,
+.Testemonials input[id="slide2"]:checked + div,
+.Testemonials input[id="slide3"]:checked + div
+{opacity: 1;top:40px}
+
+/* End Testemonials*/
 
 /* Start Contact Me */
 .ContactMe{
@@ -361,7 +422,7 @@ header #slider .introduction button:hover{
 }
 .ContactMe .form input[type=submit]{
 	display: block;
-    color: rgb(255, 204, 213);
+    color: rgb(172, 172, 172);
     font-weight: bold;
     font-family: cursive;
     font-size: 30px;
@@ -375,22 +436,23 @@ header #slider .introduction button:hover{
 } 
 /* End Contact Me */
 
+
 /* Start Footer */
-.footer{
+footer{
 	background-color: #000;;
 	color: #FFF;
 	padding: 7px 0;
 	text-align: center;
 }
-.footer ul{ 
+footer ul{ 
 	list-style: none;
 	padding-left: 0;
 	margin: 10px 0 0 0 ;
 }
-.footer ul li{ 
+footer ul li{ 
 	display: inline-block;
 }
-.footer ul li img{ 
+footer ul li img{ 
 	width: 25px;
 	height: 25px;
 	padding-right: 2px;
