@@ -67,7 +67,6 @@ header nav ul li a:hover{
 }
 header #slider{
 	background-image: url('https://www.creativeclique.co.za/wp-content/uploads/2019/01/Ridge-Design-Website-Design-Background.jpg');
-	/* background-image: url('../images/tamaraHussien.jpg'); */
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -85,11 +84,7 @@ header #slider .introduction{
 	text-align: center;
     color: white; 
 	margin-top: 18%;
-	/* text-align: center;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 2%; */
+	text-shadow: 2px 2px 10px black;
 }
 header #slider .introduction h2{
 	font-size: 50px;
@@ -97,19 +92,19 @@ header #slider .introduction h2{
 	font-family: 'Piedra', cursive;
 }
 header #slider .introduction button{
-	background: none;
-	width: 240px;
-	margin-top: 30px;
-	font-size: 20px;
-	border: 3px solid #FFF;
-	border-radius: 7px;
-	font-weight: bold;
-	padding: 10px 0px;
-	color: white; 
-	cursor: pointer;
+	background: #1014155c;
+    width: 160px;
+    margin: 20px 2px 0 2px;
+    font-size: 20px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
 }
 header #slider .introduction button:hover{
-	transition: all .5s ease-in-out;
+	transition: all 1s ease-in-out;
 	background-color: white;
 	border: none;
 	color: #000;
@@ -146,16 +141,11 @@ p:last-of-type{
 	width: 33.33333%;
 	margin-top: 23px;
 }
-#services .service:hover{
-	/* transform: translateZ(50px); */
-	transform: scale(1.2);
-	transition: all .5s ease-in-out;
-}
 #services .service img{
-	width: 150px;
-    height: 150px;
+	width: 80px;
+    height: 80px;
     display: block;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 #services .service h3{
 	text-align: center;
@@ -184,9 +174,18 @@ p:last-of-type{
 	display: inline;
 	width: 24%;
 	float: left;
+	margin-bottom: 40px;
 }
 #education .edu h5{
 	margin-bottom: 10px;
+}
+/* #education ul{
+	display: inline;
+} */
+#education li{
+	position: absolute;
+    font-size: x-large;
+    margin-top: -14px;
 }
 #education .edu h4{
 	margin: 10px 0;
@@ -201,8 +200,8 @@ p:last-of-type{
 }
 #education .certificate{
 	display: inline;
-    width: 32%;
-    margin-right: 1.3%;
+    width: 22%;
+    margin-right: 3%;
     float: left;
     text-align: center;
 }
@@ -211,11 +210,11 @@ p:last-of-type{
 }
 #education .certificate img{
 	width: 100%;
-    height: 250px;
+	height: 250px;
 }
 #education .certificate img:hover{
 	transition: all .5s ease-in-out;
-	transform: rotate(-5deg) scale(1.6);
+	transform: rotate(-5deg) scale(1.8);
 	padding: 10px;
 }
 #education .certificate h4{
