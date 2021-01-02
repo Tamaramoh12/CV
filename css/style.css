@@ -102,8 +102,8 @@ header nav ul li a{
 }
 header nav ul li a:hover{
 	color:rgb(172, 172, 172);
-    text-decoration: underline;
-    font-size: larger;
+	text-decoration: underline;
+	font-weight: bold;
 }
 /*Nav For Mobile & Tablet*/
 @media (max-width: 767px){
@@ -435,10 +435,6 @@ p:last-of-type{
     height: 250px;
 	display: block;
     margin: 0 auto;
-}
-#projects .pro img:hover{
-	transition: all .5s ease-in-out;
-	transform: scale(1.1);
 }
 #projects .pro div{
 	text-align: center;
